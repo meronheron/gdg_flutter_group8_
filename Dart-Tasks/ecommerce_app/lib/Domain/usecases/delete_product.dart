@@ -1,8 +1,8 @@
 import 'package:ecommerce_app/domain/repositories/product_repository.dart';
-class DeleteProductUsecase {
+class DeleteProductUsecase{
   final ProductRepository repository;
   DeleteProductUsecase(this.repository);
-  Future<void> call(String id) async {
+  Future<void> call(String id)async{
     return await repository.deleteProduct(id);
   }
 }
