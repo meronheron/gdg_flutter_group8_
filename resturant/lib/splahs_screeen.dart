@@ -4,6 +4,8 @@ void main() {
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -40,14 +42,31 @@ class MyApp extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                 
+                Container(
+                  padding: EdgeInsets.symmetric(vertical: 15, horizontal: 30), // Button padding
+                  decoration: BoxDecoration(
+                    color: Colors.white, // White background
+                    borderRadius: BorderRadius.circular(30), // Curved edges
+                  ),
+                  child: TextButton(
+                    onPressed: () {
+                      
+                    },
+                    child: Text(
+                      'Get Started',
+                      style: TextStyle(
+                        color: const Color.fromARGB(255, 78, 63, 173), // Text color
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
-        )
-          
         ),
-      );
-    
+      ),
+    );
   }
 }
