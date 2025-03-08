@@ -63,55 +63,6 @@ class MyApp extends StatelessWidget {
               ],
             ),
             SizedBox(height: 70),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                alignment: Alignment.center,
-                width: 430,
-                height: 463,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(25),
-                    bottomLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25),
-                  ),
-                  color: Colors.white,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween, // Ensures spacing
-                  children: [
-                    // Rating Box (Left)
-                    Container(
-                      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 137, 71, 202), // Background color
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Row(
-                        children: [
-                          Icon(Icons.star, color: Colors.white, size: 18), // Star icon
-                          SizedBox(width: 4), // Small spacing
-                          Text(
-                            '4.8',
-                            style: TextStyle(color: Colors.white, fontSize: 16),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    // Price Text (Right)
-                    Text(
-                      '\$20',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.amber,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ],
         ),
       ),
